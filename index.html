@@ -53,6 +53,26 @@
 				</li>
 			</ul>
 
+			<ul data-inset="true" id="localstorageDemo" class="list_viewer" data-role="listview" data-theme="a">
+				<li data-role="list-divider"> Local Storage Demo</li>
+				<li class="list_container">
+					<div class="max-width">
+						<h3>Log In Form</h3>
+						<div id="form_container">
+							<label for="LS_name">Name</label>
+							<input type="text" id="LS_name"/><br/>
+							<label for="LS_email">Email</label>
+							<input type="text" id="LS_email"/><br/>
+							<button id="btnStore"> Store </button>
+						</div>
+							<h3>View Data</h3>
+							<button id="btnLoadData"> Load </button>
+							<h3>Delete Data</h3>
+							<button id="btnDeleteData"> Delete </button>
+					</div>	
+				</li>
+			</ul>
+
 
 		<div data-role="panel" id="myPanel_index" data-display="overlay" class="myPanel">
 			<ul data-role="listview" id="index_menu">
@@ -74,6 +94,31 @@
 			 </ul>
 		</div>
 		<script>
+	window.onload=function(){
+		document.getElementById("btnStore").addEventListener('click', storeData, false);
+		document.getElementById("btnLoadData").addEventListener('click', loadData, false);
+		document.getElementById("btnDeleteData").addEventListener('click', deleteData, false);
+	};
+
+function storeData(){
+	var name = document.getElementById("LS_name").value;
+	var email = document.getElementById("LS_email").value;
+	
+	localStorage.setItem('name', name);
+	localStorage.setItem('email', email);
+}
+
+function loadData(){
+	var name = localStorage.getItem('name');
+	var email = localStorage.getItem('email');
+	alert(name + " &amps; " + email);
+}
+
+function deleteData(){
+localStorage.clear();
+}
+
+		
 		
 	$('#index_menu').tendina({
   		speed: 400,
@@ -82,6 +127,8 @@
 	$(document).on('swiperight', function(event, ui){
 		$('#myPanel_index').panel('open');
 	});
+	
+	
 			
 	var opts = {
 		lines: 0, // The number of lines to draw
