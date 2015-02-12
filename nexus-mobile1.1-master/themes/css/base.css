@@ -1,0 +1,90 @@
+
+
+	.ui-panel {
+		-webkit-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+		-moz-box-shadow: 5px 0 5px rgba(0,0,0,.15);
+		box-shadow: 5px 0 5px rgba(0,0,0,.15);
+		background-color: rgba(0,0,0,.85);
+		top: 44;
+	}
+	
+	#historyGraphBtn .ui-btn{
+		padding: .7em .8em;
+	}
+			
+
+ul.list_viewer{ margin-top: 20px; margin-left: 2%; margin-right: 2%; margin-bottom:20px;}
+li.list_container {background: #f3f3f3; font-family: Helvetica;}
+li.list_container .max-width {max-width:300px; margin: auto;}
+li.list_container .max-width h3{line-height: 1.3em; font-size: 20px; color: #4D4D4D; text-align: center;}
+
+#spending_now_container{max-width:300px; height: 130px; margin: 10px auto; position:relative;}
+#spending_now_container img { top:15; left:10; width:55px; height:120px; position: absolute;}
+#spending_now_container span { letter-spacing: 0; color:#66aad7; font-size: 2.7em; position:absolute; top:35; left:90; font-weight: bolder;}
+
+#spend_so_far_today {max-width:300px; margin: auto;  font-family: Helvetica; color: #4D4D4D;}
+#spend_so_far_today h3{line-height: 1.3em; font-size: 20px; text-align: left;}
+#spend_so_far_today h4{line-height: 1.5em; font-size: 40px; text-align: right;}
+
+.row_container{width: 100%; margin:auto; max-width:400px;}
+.half_row_contaier{float:left; width:50%}
+.clear_float{clear:both}
+
+p.darker_text{font-size: 1.0em !important; font-weight: 900 !important; white-space:normal !important; margin:0 2% 0 2% !important; color: #4D4D4D;}
+p.lighter_text{font-size: 1.0em !important; font-weight: 500 !important; white-space:normal !important; margin:0 2% 0 2% !important; color: #A4A4A4;}
+.large_blue{color:#0080FF; font-size: 1.3em; font-weight: 900;}
+.large_green{color:#088A08; font-size: 1.6em; line-height: 1.9em; font-weight: 900;}
+
+
+.progress{
+height: 20px;
+max-width: 500px;
+margin: 7px auto;
+overflow: hidden;
+background-color: #f5f5f5;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.progress-bar-success {
+background-color: #5cb85c;
+}
+
+.progress-bar-info {
+background-color: #5bc0de;
+}
+
+.progress-bar-warning {
+background-color: #f0ad4e;
+}
+
+.progress-bar-danger {
+background-color: #d9534f;
+}
+
+.progress-bar {
+float: left;
+width: 0;
+height: 100%;
+font-size: 12px;
+line-height: 20px;
+color: #fff;
+text-align: center;
+/*background-color: #428bca;*/
+-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+-webkit-transition: width .6s ease;
+-o-transition: width .6s ease;
+transition: width .6s ease;
+}
+
+
+.drop_down{
+	background-color: #D6D6D6 !important;
+	color: #828282 !important;
+}
+
+.ui-panel{
+	width: 12em !important;
+}
