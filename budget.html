@@ -52,13 +52,6 @@
 			</div>
 			<div class="clear_float">&nbsp;</div>
 		</li>
-		
-		
-		<li><h3>View Data</h3>
-			<button id="btnLoadData1"> Load </button>
-		</li>
-		
-		
 	</ul>
 	<div data-role="panel"  id="myPanel_budget" data-display="overlay" >
 			<ul data-role="listview" id="budget_menu">
@@ -81,15 +74,9 @@
 	</div><!-- panel end -->
 	<script>
 	
-	window.onload=function(){
-		document.getElementById("btnLoadData1").addEventListener('click', loadData1, false);
-	};
+
 	
-function loadData1(){
-		var name = localStorage.getItem('name');
-		var email = localStorage.getItem('email');
-		alert(name + " and " + email);
-	}
+
 		$('#budget_menu').tendina({
 	  		speed: 400,
 		});

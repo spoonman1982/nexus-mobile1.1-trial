@@ -53,7 +53,32 @@
 			 </ul>
 		</div>
 	<script>
-				
+	window.onload=function(){
+		document.getElementById("btnStore").addEventListener('click', storeData, false);
+		document.getElementById("btnLoadData1").addEventListener('click', loadData1, false);
+		document.getElementById("btnDeleteData").addEventListener('click', deleteData, false);
+	};
+
+function storeData(){
+	var name = document.getElementById("LS_name").value;
+	var email = document.getElementById("LS_email").value;
+	
+	localStorage.setItem('name', name);
+	localStorage.setItem('email', email);
+}
+
+function loadData1(){
+	var name = localStorage.getItem('name');
+	var email = localStorage.getItem('email');
+	alert(name + " &amps; " + email);
+}
+
+function deleteData(){
+localStorage.clear();
+}
+
+
+
 	$('#register_menu').tendina({
   		speed: 400,
 	});
