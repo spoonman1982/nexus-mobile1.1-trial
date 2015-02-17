@@ -11,13 +11,11 @@
 	</ul>
 		<div data-role="content" data-theme="a">
 			
-			<div style="width: 90%; margin: auto">
-	        	
-				
-			<img src="themes/images/mock_nexus/history1.png" width=100%>
-				
-	    	</div>
-	    </div>
+		<ul data-role="listview" id="kwh_readings">
+			<li>Demo 1</li>
+			<li>Demo 2</li>
+		</ul>
+    </div>
 	<div data-role="panel"  id="myPanel_my_home" data-display="overlay" >
 		<ul data-role="listview" id="my_home_menu">
 			<li><a href="index.html">Dash Board</a></li>
@@ -30,8 +28,8 @@
 			</li> 
 			<li><a href="#">Settings</a>
 			 	<ul data-role="listview">
-			 		<li><a href="#" class="drop_down">Sync Settings</a></li>
-			 		<li><a href="#" class="drop_down">Log Out</a></li>
+			 		<li><a href="#" class="drop_down" id="sync">Sync</a></li>
+			 		<li><a href="#" class="drop_down" id="clear">Delete</a></li>
 			 		<li><a href="sign_up.html" class="drop_down">Sign Up</a></li>
 			 	</ul>
 			 </li>
@@ -41,9 +39,14 @@
 	$(document).on('swiperight', function(event, ui){
 		$('#myPanel_my_home').panel('open');
 	});
-		$('#my_home_menu').tendina({
+	$('#my_home_menu').tendina({
 	  		speed: 400,
-		});
+	});
+        
+	$(function(){
+	   App.initialize();
+	});
+ 
 
 	</script>
 </div><!-- /end of page -->		
